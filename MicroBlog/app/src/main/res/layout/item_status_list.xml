@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:columnCount="4"
+        android:rowCount="2">
+
+        <ImageView
+            android:id="@+id/portrait_homepage_status"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:src="@mipmap/logo_profile_me"/>
+
+        <TextView
+            android:id="@+id/user_name_homepage_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+
+
+            />
+
+        <ImageView
+            android:id="@+id/account_level_homepage_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_margin="6dp"
+            android:src="@mipmap/common_icon_membership"/>
+
+
+        <ImageButton
+            android:id="@+id/img_btn_content_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="right"
+            android:focusable="false"
+            android:scaleType="fitEnd"
+            android:background="@color/white"
+            android:src="@drawable/btn_homepage_list_arrow"
+            />
+
+        <TextView
+            android:id="@+id/time_homepage_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_columnSpan="2"
+            />
+
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/share_text_homepage_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/content_homepage_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+    <com.example.loveextra.microblog.CustomView.NineGridTestLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_nine_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:sapcing="4dp" />
+
+
+    <com.example.loveextra.microblog.CustomView.CustomGridView
+        android:id="@+id/grid_view_status_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3">
+
+
+    </com.example.loveextra.microblog.CustomView.CustomGridView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/french_grey"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btn_homepage_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/timeline_icon_retweet"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/btn_homepage_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@mipmap/timeline_icon_comment"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:id="@+id/btn_homepage_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:button="@null"
+                android:drawableLeft="@drawable/btn_homepage_like"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

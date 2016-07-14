@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/sky_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CheckBox
+        android:id="@+id/btn_homepage_content_menu_dialog_collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/collect"/>
+
+    <CheckBox
+        android:id="@+id/btn_homepage_content_menu_dialog_attention"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:button="@null"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/attention"/>
+
+</LinearLayout>

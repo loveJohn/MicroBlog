@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        >
+
+    </FrameLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/french_grey"/>
+
+    <LinearLayout
+        android:id="@+id/btn_mainpage_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true">
+
+        <RadioGroup
+            android:id="@+id/rgroup_mainpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_mainpage_homepage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/btn_mainpage_homepage"
+                android:text="@string/homepage"
+                android:textSize="9sp"
+                android:textColor="@color/color_text_radiobutton"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/btn_mainpage_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/btn_mainpage_message"
+                android:text="@string/message"
+                android:checked="false"
+                android:textSize="9sp"
+                android:textColor="@color/color_text_radiobutton"
+                android:layout_gravity="top"
+                android:layout_weight="1"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_mainpage_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/tabbar_compose_icon_add"
+                    android:background="@drawable/shape_btn"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    />
+
+            </RelativeLayout>
+
+
+            <RadioButton
+                android:id="@+id/btn_mainpage_discover"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/btn_mainpage_discover"
+                android:text="@string/discover"
+                android:checked="false"
+                android:textSize="9sp"
+                android:textColor="@color/color_text_radiobutton"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/btn_mainpage_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/btn_mainpage_profile"
+                android:text="@string/me"
+                android:checked="false"
+                android:textSize="9sp"
+                android:textColor="@color/color_text_radiobutton"
+                android:layout_weight="1"
+                android:layout_gravity="top"
+                android:gravity="bottom|center_horizontal"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/btn_mainpage_close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/tabbar_compose_background_icon_close"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

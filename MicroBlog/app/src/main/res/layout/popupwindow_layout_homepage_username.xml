@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/userinfo_navigationbar_background">
+
+    <ListView
+        android:id="@+id/listview_homepage_username_homepage_friend_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/my_group"
+        android:textSize="15sp"/>
+
+    <ListView
+        android:id="@+id/listview_homepage_username_my_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/other"
+        android:textSize="15sp"/>
+
+    <ListView
+        android:id="@+id/listview_homepage_username_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+    </ListView>
+
+
+    <Button
+        android:id="@+id/btn_edit_mygroup_homepage_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:background="@android:color/transparent"
+        android:text="@string/edit_my_group"/>
+
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_orange">#fc7e00</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#e2dede</color>
+    <color name="sky_blue">#3bdefa</color>
+    <color name="french_grey">#f4f4f4</color>
+    <color name="pop">#808080</color>
+    <color name="french_green">#94fa6b</color>
+    <color name="french_purple">#f3caff</color>
+</resources>

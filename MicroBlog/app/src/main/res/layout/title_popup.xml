@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/pop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/title_list"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@mipmap/mm_title_functionframe_line"
+        android:listSelector="@drawable/title_list_selector"
+        android:layout_marginTop="5dp"
+        android:scrollingCache="false" />
+    <Button
+        android:text="编辑我的分组"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_list"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/title_list" />
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+    <style name="dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="share_userName">
+        <item name="android:color">@color/sky_blue</item>
+    </style>
+    
+    
+    <style name="dialog_menu"
+        parent="android:style/Theme.Dialog">
+        
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

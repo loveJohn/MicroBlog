@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/btn_profile_navigation_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_text_button"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:text="@string/add_friend"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/btn_profile_navigation_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/me"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/btn_profile_navigation_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/color_text_button"
+            android:textSize="15sp"
+            android:text="@string/setting"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/french_grey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/french_grey">
+
+        <RelativeLayout
+            android:id="@+id/btn_profile_protect_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/logo_account_security_tip_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/color_text_button"
+                android:text="@string/protect_warning"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/triangle"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btn_profile_account_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <ImageView
+                android:id="@+id/portrait_profile_account"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_margin="5dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_rowSpan="2"
+                android:src="@mipmap/logo_profile_me"/>
+
+            <TextView
+                android:id="@+id/username_profile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="15sp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:textColor="@color/color_text_button"
+                android:text="@string/user_name"
+                android:layout_rowWeight="1"
+                />
+
+            <ImageView
+                android:id="@+id/level_profile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_gravity="right"
+                android:layout_margin="15dp"
+                android:src="@mipmap/common_icon_membership"
+                />
+
+            <TextView
+                android:id="@+id/bewrite_profile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/color_text_button"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="@string/contents"
+                android:maxEms="16"
+                android:singleLine="true"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/none_profile_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_text_button"
+                android:layout_column="2"
+                android:layout_row="1"
+                />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <RelativeLayout
+            android:id="@+id/btn_profile_microblogs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/amount_micro_blog_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_text_button"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/micro_blog"
+                android:layout_below="@id/amount_micro_blog_profile"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_text_button"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_profile_attentions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/amount_attention_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_text_button"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attention"
+                android:layout_below="@id/amount_attention_profile"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/color_text_button"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_profile_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/amount_fans_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_text_button"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fans"
+                android:layout_below="@id/amount_fans_profile"
+                android:textColor="@color/color_text_button"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/french_grey"/>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_icon_zhifubao"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/pay"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/color_text_button"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="right"
+        android:background="@color/french_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_dingding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_icon_dingding"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/dingding"
+            android:textColor="@color/color_text_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/french_grey"/>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_pengyouquan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_icon_zhifubao_friend"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/pengyouquan"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/color_text_button"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="right"
+        android:background="@color/french_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_friend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_weixin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/haoyou"
+            android:textColor="@color/color_text_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/french_grey"/>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_laiwang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_laiwang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/laiwang"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/color_text_button"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="right"
+        android:background="@color/french_grey"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_profile_contents_mms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/more_mms"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="@string/mms"
+            android:textColor="@color/color_text_button"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/triangle"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
